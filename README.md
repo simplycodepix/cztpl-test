@@ -1,18 +1,3 @@
-# Theme information
-
-## The documentation is available online here:
-https://cartzilla.createx.studio/docs/dev-setup.html
-OR
-**Offline**: inside Cartzilla/dist/docs
-
-## Theme Installation Steps:
-1. Install Node.js and Npm (Node Package Manager)
-https://nodejs.org/en/
-2. Run `npm install` in your terminal to install all project dependencies
-3. After the installation is completed run `gulp` to launch the project. It should automatically opens Finder homepage in your browser (http://localhost:3000/)
-
-**For more details see the documentation that comes with the theme.**
-
 # Application information
 
 While this theme is created with pug, the target app is nextjs, the final template is still under development as it will be aligned with our style guide. MOreover the target template will be delivered with 
@@ -41,3 +26,27 @@ See src/components/image.tsx to see how product data results in a imagekit.io im
 
 ## Assignment
 Build either the product or the productgroup page from the available API and the included template.
+
+## Install the aasignment
+1. Install Node.js and Npm (Node Package Manager)
+https://nodejs.org/en/
+2. Run `pnpm install` in your terminal to install all project dependencies
+3. After the installation is completed run `pnpm run dev` to launch the project. It should automatically opens Finder homepage in your browser (http://localhost:3000/)
+
+
+# Theme information
+
+## The documentation is available online here:
+https://cartzilla.createx.studio/docs/dev-setup.html
+OR
+**Offline**: inside Cartzilla/dist/docs
+
+## Theme Installation Steps:
+1. Install Node.js and Npm (Node Package Manager)
+https://nodejs.org/en/
+2. Run `npm install` in your terminal to install all project dependencies
+3. After the installation is completed run `gulp` to launch the project. It should automatically opens Finder homepage in your browser (http://localhost:3000/)
+
+### Note, NextJS is already installed, ignore the above install guide for the theme.
+
+**For more details see the documentation that comes with the theme.**
