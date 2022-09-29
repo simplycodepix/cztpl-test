@@ -13,7 +13,7 @@
 @import 'utilities';
 
 // Bootstrap
-@import '../../dist/vendor/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Layout & components
 @import 'reboot';
@@ -21,3 +21,7 @@
 
 // User custom styles
 @import 'user';
+
+h1 {
+    font-size: 4px;
+}

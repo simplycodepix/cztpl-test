@@ -4,7 +4,7 @@
 
 
 // Import Bootstrap functions to use inside variables values
-@import '../../dist/vendor/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/functions.scss';
 
 
 //== Colors
@@ -246,7 +246,7 @@ $blockquote-footer-font-size: $font-size-sm !default;
 // Icons
 
 $icons-font-family:           'cartzilla-icons' !default;
-$icons-font-path:             '../fonts' !default;
+$icons-font-path:             '../../fonts' !default;
 
 
 // Tables
