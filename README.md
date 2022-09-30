@@ -1,6 +1,24 @@
 # Application information
 
-While this theme is created with pug, the target app is nextjs, the final template is still under development as it will be aligned with our style guide. MOreover the target template will be delivered with 
+I am hiring for a project that creates an ecommerce website replacement for www.baasbv.eu. 
+
+## Project
+This project will start bij the end of october, the aim is to replace the current website by the end of the year and expand the functionality of the site in the next year. 
+
+I presume the project will take 4-6 weeks of full time frontending
+The following will be provided:
+
+- Postman collection
+- User stories
+- Page mapping
+- Examples
+- Theme in the form of react components.
+- Styleguide
+
+## Assignment
+In order to select the right partner to do this with I have created a small assignment.
+
+While this theme is created with pug, the target app is nextjs, the final template is still under development as it will be aligned with our style guide. Moreover the target template will be delivered with 
 react components instead of a pug tpl. This repo is just for finding the right partner in this process.
 
 ## Api information
@@ -25,7 +43,12 @@ this assignment.
 See src/components/image.tsx to see how product data results in a imagekit.io image
 
 ## Assignment
-Build either the product or the productgroup page from the available API and the included template.
+#### dd 30/09/22 Update
+Build *one* component of either the product or the productgroup page from the available API and the included template.
+
+Producttemplate: https://cartzilla.createx.studio/shop-single-v1.html
+Productgroup template: https://cartzilla.createx.studio/shop-list-ls.html
+
 
 ## Install the aasignment
 1. Install Node.js and Npm (Node Package Manager)
