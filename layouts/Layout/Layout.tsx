@@ -15,17 +15,14 @@ const Layout: React.FC<{
   return (
     <React.Fragment>
       <main className="page-wrapper">
-        {/* <Navbar />
-        <PageTitle /> */}
+        {/* <Navbar /> */}
         <PageTitle pageTitle={pageTitle} />
 
         {!loading ? children : null}
       </main>
 
       <FooterDark />
-      {/* 
-      
-      <Toolbar /> */}
+      {/* <Toolbar /> */}
     </React.Fragment>
   )
 }

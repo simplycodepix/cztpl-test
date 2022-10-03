@@ -1,18 +1,21 @@
-import React, { useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
+import React, { useState, useEffect, useMemo } from "react"
+import { useSelector } from "react-redux"
 
 import "bootstrap/dist/js/bootstrap.bundle"
 
 import { ProductPrice } from "../../../redux/product.slice"
 import { RootState } from "../../../redux/store"
+import { calculateReviewStars } from "../../../utils/product"
+
 import { replaceMarkdownLink } from "../../../utils/markdown-link"
+import StarRating from "../../StarRating"
 
 const ProductDetails = () => {
   const [selectedPrice, setSelectedPrice] = useState<ProductPrice | null>(null)
 
   const { Contents } = useSelector((state: RootState) => state.product)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!Contents?.Prices) return
     setSelectedPrice((value) => {
       if (value) return value
@@ -20,10 +23,16 @@ const ProductDetails = () => {
     })
   }, [Contents])
 
+  const totalRating = useMemo(() => {
+    if (!Contents) return 0
+    return calculateReviewStars(Contents)
+  }, [Contents])
+
   return (
     <div className="product-details ms-auto pb-3">
       <div className="d-flex justify-content-between align-items-center mb-2">
         <a href="#reviews" data-scroll="data-scroll">
+          <StarRating rating={totalRating} />
           <span className="d-inline-block fs-sm text-body align-middle mt-1 ms-1">
             {Contents?.Reviews?.length} Reviews
           </span>

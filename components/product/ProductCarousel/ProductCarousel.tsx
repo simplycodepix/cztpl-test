@@ -3,24 +3,13 @@ import Link from "next/link"
 import { tns } from "tiny-slider"
 
 import { ProductResponse } from "../../../redux/product.slice"
+import { calculateReviewStars } from "../../../utils/product"
 
 import StarRating from "../../StarRating"
 import Image from "../../Image"
 
 const generateCarouselId = () =>
   `carousel-${Math.random().toString(16).slice(2)}`
-
-const calculateReviewStars = (product: ProductResponse) => {
-  const { Reviews } = product
-  if (!Reviews?.length) return 0
-
-  const starsAvg =
-    Reviews.reduce((curr, review) => {
-      return curr + +review.Stars
-    }, 0) / Reviews.length
-
-  return Math.round(starsAvg * 2) / 2
-}
 
 const ProductCarousel: React.FC<{ products: ProductResponse[] }> = ({
   products,
